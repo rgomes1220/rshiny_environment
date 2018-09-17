@@ -29,3 +29,8 @@ for(i in 1:length(names(pkgs))){
 
 remove.packages("ggplot2") #version 3.0 is installed as a tidyverse dependency
 devtools::install_version("ggplot2", version = "2.2.1",repos = "https://cran.r-project.org", dependencies=TRUE,type="source")
+
+
+remove.packages("plotly") #4.8.0 does not load with ggplot2<3.0, downgrading
+# needs dependencies=FALSE
+devtools::install_version("plotly", version = "4.7.1",repos = "https://cran.r-project.org", dependencies=FALSE,type="source")
