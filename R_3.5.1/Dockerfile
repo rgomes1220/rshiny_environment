@@ -41,6 +41,8 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   default-jdk \
   libbz2-dev \
   liblzma-dev \
+  nano \
+  cron \
   #needed for r package v8 which is used in shinyjs
   libv8-3.14-dev \
   # creates a directory to be used for setup
