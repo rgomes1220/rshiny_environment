@@ -43,6 +43,7 @@ RUN apt-get update -qq && apt-get -y --no-install-recommends install \
   liblzma-dev \
   nano \
   cron \
+  python3-sphinx \
   #needed for r package v8 which is used in shinyjs
   libv8-3.14-dev \
   # creates a directory to be used for setup
